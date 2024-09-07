@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz App</title>
+        <link rel="stylesheet" href="quiz.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+                <div id="timer">Time left: <span id="time-left">10</span> seconds</div>
+                <div id="skip-counter"></div>
+                <h1 id="question">Question text</h1><br>
+                <ul>
+                    <li>
+                        <input
+                            type="radio"
+                            id="a"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="a_text" for="a">Question</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            id="b"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="b_text" for="b">Question</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            id="c"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="c_text" for="c">Question</label>
+                    </li>
+                    <li>
+                        <input
+                            type="radio"
+                            id="d"
+                            name="answer"
+                            class="answer"
+                        />
+                        <label id="d_text" for="d">Question</label>
+                    </li>
+                </ul>
+            </div>
+            <div id="progressBar" style="--width: 100"></div>
+            <button id="skip">Skip</button>
+            <button id="submit">Submit</button>
+        </div>
+    </body>
+</html>
